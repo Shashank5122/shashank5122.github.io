@@ -1,25 +1,31 @@
 body {
     margin: 0;
-    font-family: "Inter", Arial, sans-serif;
-    background-color: #0f172a;
-    color: #e5e7eb;
-    line-height: 1.6;
+    font-family: "Inter", sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 .hero {
-    padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #020617, #0f172a);
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+.profile {
+    width: 160px;
+    border-radius: 50%;
+    border: 4px solid #3b82f6;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .hero h2 {
+    color: #60a5fa;
     font-weight: 400;
-    color: #93c5fd;
 }
 
 .hero p {
@@ -33,28 +39,39 @@ body {
 }
 
 section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 60px 20px;
 }
 
 h2 {
-    border-bottom: 2px solid #1e293b;
-    padding-bottom: 10px;
+    border-left: 5px solid #3b82f6;
+    padding-left: 15px;
     margin-bottom: 30px;
 }
 
 .card {
-    background-color: #020617;
+    background: #020617;
     border: 1px solid #1e293b;
     padding: 25px;
+    border-radius: 14px;
     margin-bottom: 25px;
-    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(59,130,246,0.2);
 }
 
 .card h3 {
+    color: #3b82f6;
     margin-top: 0;
-    color: #60a5fa;
+}
+
+.highlight {
+    color: #22c55e;
+    font-weight: 600;
 }
 
 .tech {
@@ -68,17 +85,22 @@ h2 {
 }
 
 .skills li {
-    background-color: #020617;
+    background: #020617;
     margin: 10px 0;
-    padding: 12px 18px;
+    padding: 14px;
     border-radius: 8px;
     border: 1px solid #1e293b;
+    transition: background 0.3s;
+}
+
+.skills li:hover {
+    background: #1e293b;
 }
 
 .btn {
     display: inline-block;
     padding: 12px 22px;
-    background-color: #2563eb;
+    background: #3b82f6;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -86,12 +108,11 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #1d4ed8;
+    background: #2563eb;
 }
 
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     color: #64748b;
-    font-size: 0.9rem;
 }
