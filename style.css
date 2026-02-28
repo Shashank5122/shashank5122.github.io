@@ -101,6 +101,18 @@ h2 {
     margin-bottom: 60px;
     font-weight: 700;
 }
+/* SKILLS */
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #A1A1AA;
+}
 
 /* CARD */
 .card {
